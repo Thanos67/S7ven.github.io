@@ -1,32 +1,58 @@
 body {
-  padding: 0;
-  margin: 0;
-  background: #D3D3D3;
+  
+  padding: 0px;
+  margin: 0px;
+  background:#A9A9A9;
   font-family:'Dancing Script', cursive;
 }
 /*--- navigation bar ---*/
 .navbar {
+
   background:#778899;
+  padding: 0px;
+  margin: 5px;
+  margin-top: 1vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  animation: Fromleft 3s 1;
 }
-.fab{
-	transition: color 0,5s ease-in-out 1s;
+#navicons .fab {
+  position: relative;
+  left: -12rem;
+  opacity: 0.8;
+transition:  ease-in-out 1s;
+color: #FFFFFF;
+animation: FromRight 2s 1;
+
+
+
 }
 
-.fab:hover {
+#navicons .fab:hover {
 color: #d3325f ;
 }
 
-.fab {
-color: #FFFFFF;
-}
+
 
 
 .navbar-brand{
-	position:absolute;
+  
+	position:relative;
 left:50%;
 transform: translateX(-50%);
 top:0,2px;
     font-size: 200%;
+    
+}
+.navbar-brand > img {
+  height: 20%;
+  width: 20%;
+  margin: 0 auto;
+
+
+  /* probably not needed anymore, but doesn't hurt */
+ 
+
 }
 
 .nav-link,
@@ -34,29 +60,33 @@ top:0,2px;
   color: #FFFFFF;
   cursor: pointer;
    float: left;
-   padding: 0,5px;
+   padding: 2px;
    text-align: center;
-	float: none;
+  float: none;
+  
 	
 
 }
 .nav-link {
-  margin-right: 1em !important;
+  margin-right: 1em ;
+  animation: Fromleft 2s 1;
   
 }
 .nav-link:hover {
-  color: #d3325f;
+  color: black;
 }
 .navbar-brand:hover{
 	color: #d3325f;
 }
 
 .navbar-collapse {
+  
   justify-content: flex-end;
+
 }
 
 .header {
-  background-image: url('seven.jpg');
+  background-image: url('img/seven.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -178,17 +208,7 @@ top:0,2px;
   
 }
 
-.navbar-brand > img {
-   height: 20%;
-   width: 20%;
-   margin: 0 auto;
 
-
-   /* probably not needed anymore, but doesn't hurt */
-   -o-object-fit: contain;
-   object-fit: contain; 
-
-}
 
 .description button a {
 	color:white;

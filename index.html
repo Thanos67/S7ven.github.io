@@ -15,11 +15,11 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-
+<!--navbar-->
 <nav class="navbar navbar-expand-md fixed-top navbar-brand-center">
 
-  <a class="navbar-brand" href="https://www.facebook.com/dimitris.nikas.5/"><img class="img-responsive"  src="7.jpg" >ven</a>
-  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+  <a class="navbar-brand " href="https://www.facebook.com/dimitris.nikas.5/"><img class="img-responsive"  src="img/7.jpg" >ven</a>
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation" >
     <span class="navbar-toggler-icon"></span>
   </button>
   
@@ -28,15 +28,15 @@
   
   
   
-  <div class="collapse navbar-collapse" id="main-navigation">
+  <div class="collapse navbar-collapse " >
   <ul class="navbar-nav mr-auto ">
-	 <li class="nav-item">
-            <a class=" waves-effect waves-light mr-3  " href="https://www.facebook.com/sevencafe80" target="_blank">
+	 <li class="nav-item active ">
+            <a id ="navicons" class="mr-3  " href="https://www.facebook.com/sevencafe80" target="_blank">
               <i class="fab fa-facebook fa-2x"></i>
             </a>
 		</li>
 		<li class="nav-item">
-            <a class=" waves-effect waves-light" href="https://www.instagram.com/sev7en_cafe/" target="_blank">
+            <a id ="navicons" href="https://www.instagram.com/sev7en_cafe/" target="_blank">
               <i class="fab fa-instagram fa-2x"></i>
             </a>
 		</li>
@@ -49,18 +49,19 @@
     <ul class="navbar-nav ">
 	 
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#staff">Προσωπικο</a>
+        <a class="nav-link" href="#staff">Προσωπικο<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
 </nav>
 
+<!--welcome-->
 <header class="page-header header container-fluid">
 
 <div class="overlay">
@@ -75,7 +76,7 @@
 
 
 
-
+<!--Staff-->
 
 <div class="container-fluid padding" id="staff">
 <div class="row welcome text-center">
@@ -90,12 +91,12 @@
   <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-12">
       <h3 class="feature-title">Δημητρης Νικας</h3>
-      <img src="vrom.jpg" class="img-fluid">
+      <img src="img/vrom.jpg" class="img-fluid">
       <p>  best barista eu.</p>
     </div>
     <div class="col-lg-3 col-md-4 col-sm-12">
       <h3 class="feature-title">Γιωργος Νικας</h3>
-      <img src="gioris.jpg" class="img-fluid">
+      <img src="img/gioris.jpg" class="img-fluid">
       <p>2nd best barista eu </p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12">        
@@ -118,7 +119,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner"  >
     <div class="carousel-item active">
-      <img  src="seven.jpg" alt="">
+      <img  src="img/seven.jpg" alt="">
       <div class="carousel-caption">
 		<h1>Welcome to our Gallery</h1>
 		<p> </p>
@@ -126,14 +127,14 @@
     </div>
 
     <div class="carousel-item">
-      <img  src="seven1.jpg" alt="">
+      <img  src="img/seven1.jpg" alt="">
       <div class="carousel-caption">
        
       </div>
     </div>
 
 	 <div class="carousel-item">
-      <img  src="seven3.jpg" alt="">
+      <img  src="img/seven3.jpg" alt="">
       <div class="carousel-caption">
        
       </div>
@@ -155,16 +156,9 @@
 </div>
 
 
-
-
-
 <br>
 
-
-
-
-
-
+<!--footer-->
 
 <footer class="page-footer">
   <div class="container">
@@ -195,6 +189,17 @@ Sunday:
       <br/></p>
     </div>
   </div>
+  <div class="row">
+    <div class=" col-md-8">
+      <h6 class="text-uppercase font-weight-bold">Follow</h6>
+      <a class="mr-3  " href="https://www.facebook.com/sevencafe80" target="_blank">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a class="mr-3  " href="https://www.facebook.com/sevencafe80" target="_blank">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      </div>
+      </div>
   <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
 </footer>
 
