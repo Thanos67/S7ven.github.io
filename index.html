@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
 <script src="https://kit.fontawesome.com/cb60488afc.js" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1q33NFD2H7sNXBzxf0BPckBhdu1h3ZFo&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+	<link rel="stylesheet" type="text/css" href="./main.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
   <title>S7ven</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="main.css"/>
   <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Font+Name">
+  href="https://fonts.googleapis.com/css?family=Font+Name"/>
+  <script src="./main.js"></script>
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -49,13 +54,16 @@
     <ul class="navbar-nav ">
 	 
       <li class="nav-item">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Αρχικη<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#staff">Προσωπικο<span class="sr-only">(current)</span></a>
       </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#map">Χαρτης<span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#contact">Επικοινωνια<span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -158,13 +166,23 @@
 
 <br>
 
+<!--Map-->
+<div class="Location">
+<h3>Βρες μας </h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+</div>
+
+
+
+
 <!--footer-->
 
 <footer class="page-footer">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-12">
-      <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+      <h6 class="text-uppercase font-weight-bold">Ωραριο Λειτουργιας </h6>
       <p> Monday:
 04:30 - 22:00
 Tuesday:
@@ -182,7 +200,7 @@ Sunday:
       
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12">
-      <h6 class="text-uppercase font-weight-bold" id="contact">Contact</h6>
+      <h6 class="text-uppercase font-weight-bold" id="contact">Εποικοινωνια</h6>
       <p>sevenkafe80@gmail.com
       <br/>
       <br/>Τηλ : 2721 089906
@@ -191,7 +209,7 @@ Sunday:
   </div>
   <div class="row">
     <div class=" col-md-8">
-      <h6 class="text-uppercase font-weight-bold">Follow</h6>
+      <h6 class="text-uppercase font-weight-bold">Ακολουθηστε μας</h6>
       <a class="mr-3  " href="https://www.facebook.com/sevencafe80" target="_blank">
         <i class="fab fa-facebook fa-2x"></i>
       </a>
@@ -200,7 +218,7 @@ Sunday:
       </a>
       </div>
       </div>
-  <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
+  <div class="footer-copyright text-center">© 2020 Copyright: S7ven Cafe</div>
 </footer>
 
 
