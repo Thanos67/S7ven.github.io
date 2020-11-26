@@ -310,12 +310,13 @@ margin-bottom: 18px;
 	
 }
 .fb-comments{
-	 margin-left: auto;
-  margin-right: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 .fb-like{
-
- margin-left: auto;
-  margin-right: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
 	
 }
