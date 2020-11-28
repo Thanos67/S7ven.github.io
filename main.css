@@ -8,7 +8,8 @@ body {
   padding: 0px;
   margin: 0px;
   background:#A9A9A9;
-  font-family:'Dancing Script', cursive;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-size: 18px;
 }
 /*--- navigation bar ---*/
 .navbar {
@@ -217,12 +218,12 @@ top:0,2px;
 
 .description button a {
 	color:white;
-	font-size:1.5rem;
+	font-size:1.3rem;
 		
 }
 .description button a:hover {
-	color:black;
-	font-size:1.5rem;
+	color:white;;
+	font-size:1.4rem;
 		
 }
 
@@ -239,8 +240,8 @@ top:0,2px;
 }
 .description button:hover {
 
-  border:2px solid black;
-  background:#778899;
+  border:2px solid white;
+  background: rgb(187, 70, 40);
  
 
 }
@@ -315,15 +316,86 @@ margin-bottom: 18px;
 }
 
 .fb-comments{
+  
   width: 100%;
-  height:100% 
   margin-bottom: 18px;
   margin-right: auto;
 }
 
 .fb-like{
-  height:100% ;
+ 
   width: 100%;
   margin-bottom: 18px;
   margin-right: auto;
 }
+
+.scroll-down{
+  height: 50px ;
+  width: 30px;
+  border: 1px solid white;
+  position: absolute;
+  left: 47%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+
+}
+
+.scroll-down:hover{
+  background:#778899;
+}
+
+.scroll-down::before,
+.scroll-down::after{
+  content: '';
+  position: absolute;
+  top:10%;
+  left: 50%;
+  border :1px solid white;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%,-100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+
+}
+
+.scroll-down::after{
+  top: 20%;
+  animation-delay: .3s;
+}
+
+@keyframes scroll-down{
+  0%{
+    opacity: 0;
+  }
+
+  30% {
+    opacity : 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    top: 90%;
+  }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
