@@ -56,7 +56,6 @@ top:0,2px;
   margin: 0 auto;
 
 
-  /* probably not needed anymore, but doesn't hurt */
  
 
 }
@@ -277,6 +276,13 @@ top:0,2px;
   color: #ccc;
   padding: 60px 0 30px;
 }
+.page-footer h5 {
+font-size: 1.5rem;
+color: rgb(233, 95, 95);
+
+
+}
+
 .footer-copyright {
   color: #666;
   padding: 40px 0;
