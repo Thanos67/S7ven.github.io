@@ -1,8 +1,6 @@
 
 html {
 	scroll-behavior: smooth;
-    margin-left: auto;
-	margin-right: auto;
 	width: 100%;
 }
 body {
@@ -301,15 +299,17 @@ top:0,2px;
 	
 	
 }
-.Location  {
+#map {
   height: 500px;
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
-  margin-left: auto;
-  text-align:center;
+
 margin-bottom: 18px;
 }
 
 
-
+.Location h3 {
+	text-align:center;
+	
+}
