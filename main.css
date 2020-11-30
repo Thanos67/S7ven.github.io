@@ -1,7 +1,9 @@
 
 html {
-	scroll-behavior: smooth;
-	width: 100%;
+  scroll-behavior: smooth;
+  margin:0px;
+  padding: 0px;
+  
 }
 body {
   
@@ -21,6 +23,7 @@ body {
   margin-left: 1vh;
   margin-right: 1vh;
   animation: Fromleft 3s 1;
+  font-size: 16px;
 }
 #navicons .fab {
   position: relative;
@@ -73,7 +76,7 @@ top:0,2px;
 
 }
 .nav-link {
-  margin-right: 1em ;
+  margin-right: 0,4rem ;
   animation: Fromleft 2s 1;
   
 }
@@ -307,6 +310,7 @@ color: rgb(233, 95, 95);
 	
 }
 #map {
+  
   height: 500px;
   /* The height is 400 pixels */
   width: 100%;
@@ -340,7 +344,7 @@ margin-bottom: 18px;
   width: 30px;
   border: 1px solid white;
   position: absolute;
-  left: 47%;
+  left: 50%;
   bottom: 20px;
   border-radius: 50px;
   cursor: pointer;
