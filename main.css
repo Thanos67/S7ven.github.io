@@ -1,8 +1,7 @@
 
 html {
   scroll-behavior: smooth;
-  margin:0px;
-  padding: 0px;
+
   
 }
 body {
@@ -16,7 +15,7 @@ body {
 /*--- navigation bar ---*/
 .navbar {
 
-  background:#778899;
+  background:#c42626;
   padding: 0px;
   margin: 5px;
   margin-top: 1vh;
@@ -29,7 +28,7 @@ body {
   position: relative;
   left: -12rem;
   opacity: 0.8;
-transition:  ease-in-out 1s;
+transition:  ease-in-out 0.5s;
 color: #FFFFFF;
 animation: FromRight 2s 1;
 
@@ -38,7 +37,7 @@ animation: FromRight 2s 1;
 }
 
 #navicons .fab:hover {
-color: #d3325f ;
+color: blue ;
 }
 
 
@@ -84,7 +83,7 @@ top:0,2px;
   color: black;
 }
 .navbar-brand:hover{
-	color: #d3325f;
+	color: #000000;
 }
 
 .navbar-collapse {
@@ -94,11 +93,15 @@ top:0,2px;
 }
 
 .header {
-  background-image: url('img/seven.jpg');
+  background-image: url('img/esperssakia.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   background-attachment:fixed;
+  max-height: 100%;
+  min-height: 100%;
+  margin-bottom: auto;
+  
 }
 
 .overlay {
@@ -107,7 +110,7 @@ top:0,2px;
   min-width: 100%;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .description {
@@ -120,87 +123,10 @@ top:0,2px;
   text-align: center;
   
 }
-@keyframes FromRight{
-	0%{
-		
-		
-		transform:translateX(200px);
-		opacity: 0;
-	} 
-	 50%{
-		 transform:translateX(-10px);
-		 
-	 }
-	 100%{
-		 transform:translateX(0);
-		 opacity:1;
-	 }
-	
-	 
- }
 
- @keyframes Fromleft{
-	0%{
-		
-		
-		transform:translateX(-200px);
-		opacity: 0;
-	} 
-	 50%{
-		 transform:translateX(10px);
-		 
-	 }
-	 100%{
-		 transform:translateX(0);
-		 opacity:1;
-	 }
-	
-	 
- }
- @keyframes FromTop{
-	0%{
-		
-		
-		transform:translateY(-400px);
-		opacity: 0;
-	} 
-	 40%{
-		 transform:translateY(15px);
-		 
-	 }
-	 50%{
-		 transform:translateY(-12px);
-		 
-	 }
-	 60%{
-		 transform:translateY(9px);
-		 
-	 }
-	 70%{
-		 transform:translateY(-6px);
-		 
-	 }
-	 80%{
-		 transform:translateY(4px);
-		 
-	 }
-	 90%{
-		 transform:translateY(-3px);
-		 
-	 }
-	 
-	 
-		 
-	 100%{
-		 transform:translateY(0);
-		 opacity:1;
-	 }
-	
-	 
- }
 
 .description h1 {
-  color: #778899;
+  color: #c42626;
   font-size: 6rem;
   animation: Fromleft 2s 1;
   opacity:0;
@@ -219,45 +145,65 @@ top:0,2px;
 
 
 .description button a {
+  text-decoration: none;
 	color:white;
-	font-size:1.3rem;
+	
 		
 }
 .description button a:hover {
 	color:white;;
-	font-size:1.4rem;
+	
 		
 }
 
 .description button {
-	
+	font-size:1.3rem;
 	border-radius: 25px;
-	
-	border:2px solid #778899;
-	font-size: 2rem;
-	transition: all 1s ease-in-out;
-	animation: FromTop 2.5s 1;
+	border:2px solid #c42626;
+	transition: all 0.5s ease-in-out;
+  animation: FromTop 4s 2;
   opacity:0;
   animation-fill-mode:forwards;
+  
 }
 .description button:hover {
-
+  font-size:1.5rem;
   border:2px solid white;
-  background: rgb(187, 70, 40);
+  background: #c42626;
  
 
 }
+.welcome{
+  background: rgba(0, 0, 0, 0.3);
+}
 .features {
-  margin: 4em auto;
-  padding: 1em;
-  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  min-width: 100%;
+  position: absolute;
+  max-height: 99%;
+  min-height: 99%;
+  
+  
+
 }
 .feature-title {
-  color: #333;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+  text-align: center;
+  border: 0px solid #c42626;
+  
+  border-radius: 200px;
+  color:white;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 5px;
   text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.329);
+}
+
+.features p{
+  color:white;
+  font-size: 1rem;
+  
+  margin-bottom: 50px;
 }
 .features img {
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
@@ -269,11 +215,7 @@ top:0,2px;
   text-align: center;
   
 }
-.description a {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
+
 .page-footer {
   background-color: #222;
   color: #ccc;
@@ -342,18 +284,20 @@ margin-bottom: 18px;
 .scroll-down{
   height: 50px ;
   width: 30px;
-  border: 1px solid white;
+  border: 2px solid #c42626;
   position: absolute;
   left: 50%;
   bottom: 20px;
   border-radius: 50px;
   cursor: pointer;
   transition: all 1s ease-in-out;
-
+  animation:topDown 1s infinite;
+  
+  
 }
 
 .scroll-down:hover{
-  background:#778899;
+  background:#c42626;
 }
 
 .scroll-down::before,
@@ -369,6 +313,7 @@ margin-bottom: 18px;
   border-top: transparent;
   border-left: transparent;
   animation: scroll-down 1s ease-in-out infinite;
+  
 
 }
 
@@ -376,6 +321,9 @@ margin-bottom: 18px;
   top: 20%;
   animation-delay: .3s;
 }
+
+
+/* ANIMATIONS */
 
 @keyframes scroll-down{
   0%{
@@ -392,16 +340,105 @@ margin-bottom: 18px;
     opacity: 0;
     top: 90%;
   }
-
-
-
-
-
-
-
-
-
 }
+  @keyframes FromRight{
+    0%{
+      
+      transform:translateX(200px);
+      opacity: 0;
+    } 
+     50%{
+       transform:translateX(-10px);
+       
+     }
+     100%{
+       transform:translateX(0);
+       opacity:1;
+     }
+    
+     
+   }
+  
+   @keyframes Fromleft{
+    0%{
+      
+      
+      transform:translateX(-200px);
+      opacity: 0;
+    } 
+     50%{
+       transform:translateX(10px);
+       
+     }
+     100%{
+       transform:translateX(0);
+       opacity:1;
+     }
+    
+     
+   }
+   @keyframes FromTop{
+    0%{
+      transform:translateY(-400px);
+      opacity: 0;
+  } 
+   20%{
+    transform:translateY(16px);
+    
+  }
+   30%{
+    transform:translateY(-15px);
+    
+  }
+  
+     40%{
+       transform:translateY(15px);
+       
+     }
+     50%{
+       transform:translateY(-12px);
+       
+     }
+     60%{
+       transform:translateY(9px);
+       
+     }
+     70%{
+       transform:translateY(-6px);
+       
+     }
+     80%{
+       transform:translateY(4px);
+       
+     }
+     90%{
+       transform:translateY(-3px);
+     }
+       
+     100%{
+       transform:translateY(0);
+       opacity:1;
+     }
+    
+     
+   }
+   @keyframes topDown{
+    0%{
+      transform:translateY(-10px);
+      opacity: 1;}
+  
+     50%{
+       transform:translateY(1px);
+       
+     }
+    
+     100%{
+       transform:translateY(-10px);
+       opacity:1;
+     }
+    
+     
+   }
 
 
 
